@@ -5,21 +5,20 @@ Public privacy policy for the Android game **Bloodline**
 
 Live page: https://johnhrzl.github.io/bloodline-privacy/
 
-## Before this is valid
+## Kept in sync with the app
 
-Two placeholders in `index.html` still need real values:
+The Play Console cross-checks this document against the Data Safety form.
+Contradictions between the two are a common reason for rejection, so when the
+app's data handling changes, this page changes with it. Currently declared:
 
-| Placeholder | What goes there |
-|---|---|
-| `POSTAL_ADDRESS` | Full postal address of the controller (street, postcode, city) |
-| `CONTACT_EMAIL` | Contact address for privacy enquiries — appears twice |
+- no account, no sign-in, no server of ours
+- save game stays on the device
+- Google AdMob as an independent controller (advertising ID, approximate
+  location from IP, device and usage information)
+- only the `INTERNET` and `AD_ID` permissions
+- intended for players aged 18 and over
 
-Under GDPR Art. 13 a privacy policy must name the controller and a way to
-reach them. A policy that still says `CONTACT_EMAIL` will be rejected by the
-Play Console review.
-
-Both can be edited directly on github.com — open `index.html`, click the
-pencil icon, replace, commit. GitHub Pages redeploys within about a minute.
+Controller details match those used for AI Tycoon.
 
 ## Why this is a separate repository
 
