@@ -198,11 +198,25 @@
 
 <h2>8. Permissions</h2>
 <p>
-  The app requests internet access and access to the advertising ID. Internet
-  access is used for advertising, for the optional analytics described above and,
-  if you are signed in, for Play Games Services. The advertising ID is used for
-  ad delivery only.
+  The app declares these Android permissions:
 </p>
+<ul>
+  <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> – to reach the
+    network at all, for advertising, for the optional analytics described above
+    and, if you are signed in, for Play Games Services</li>
+  <li><code>AD_ID</code> and the <code>ACCESS_ADSERVICES_*</code> permissions –
+    used for ad delivery, and required by Android's own advertising framework</li>
+  <li><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code> – requested by
+    Google's advertising library so that a video advertisement is not
+    interrupted</li>
+</ul>
+<div class="note">
+  <p style="margin:0">
+    <strong>None of these is a permission Android asks you about.</strong> They
+    are all classed as normal, granted at install time, and none of them gives
+    access to anything on your phone that belongs to you.
+  </p>
+</div>
 <p>
   The app does not access your contacts, camera, microphone, photos, files or
   precise location.
