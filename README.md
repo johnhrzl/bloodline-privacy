@@ -23,7 +23,7 @@ app's data handling changes, this page changes with it. Currently declared:
   been chosen
 - optional analytics via **PostHog** (EU servers, processor under a DPA), off
   until the player agrees, tied to a random identifier and nothing else
-- nine Android permissions after the manifest merge — `INTERNET`,
+- eight Android permissions after the manifest merge — `INTERNET`,
   `ACCESS_NETWORK_STATE`, `AD_ID`, three `ACCESS_ADSERVICES_*`, `WAKE_LOCK`,
   `FOREGROUND_SERVICE` — all classed **normal**, none of them a runtime prompt,
   all but the first two contributed by Google's advertising library
