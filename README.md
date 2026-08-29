@@ -23,6 +23,11 @@ app's data handling changes, this page changes with it. Currently declared:
   been chosen
 - optional analytics via **PostHog** (EU servers, processor under a DPA), off
   until the player agrees, tied to a random identifier and nothing else
+- **Firebase Crashlytics** for crash reports, behind the same consent switch
+  as the analytics above – error, Android version, device model, nothing else
+- an in-game **bug report** the player composes and sends from their own mail
+  app; the game itself transmits nothing, and the full text is shown before
+  sending
 - eight Android permissions after the manifest merge — `INTERNET`,
   `ACCESS_NETWORK_STATE`, `AD_ID`, three `ACCESS_ADSERVICES_*`, `WAKE_LOCK`,
   `FOREGROUND_SERVICE` — all classed **normal**, none of them a runtime prompt,
